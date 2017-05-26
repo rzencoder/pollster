@@ -1,0 +1,15 @@
+extends partials/layout.pug
+
+block content
+  .profile-container.container
+    p(id="display-name" class="username")
+    button.btn.create-poll-btn.btn-action-black
+      a(href="/newpoll") + Create New Poll
+    button.btn.logout.btn-action-red
+      a(href="/logout") Logout
+    h2 Your Polls
+    ul(id="user-polls" class="profile-list")
+    
+
+  script(type="text/javascript" src="common/ajax-functions.js")
+  script(type="text/javascript" src="controllers/profile.js")

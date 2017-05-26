@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title Pollster - The Custom Vote App
+    link(href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:400,700" rel="stylesheet")
+    link(href="/public/css/normalize.css" rel="stylesheet" type="text/css")
+    link(href="/public/css/main.css" rel="stylesheet" type="text/css")
+  body
+    nav
+      a(href="/")
+        .logo
+          img(src="/public/img/logo.png" alt="icon of a bar chart")
+          p Pollster
+      .menu
+        a(href="/polls") Polls
+        a(href="/profile") Profile
+        a(href="/about") About
+    block content
+    

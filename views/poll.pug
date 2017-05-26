@@ -1,0 +1,22 @@
+extends partials/layout.pug
+
+block content
+  .chart-container
+    h2.question
+    p.message
+    div
+      .poll-container      
+        ul.options.list
+        if (user)
+          .add-option-container
+            button.add-option.btn.btn-action-black Add New Option
+      .chart
+        
+      
+  script(type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js')
+  script(type="text/javascript" src="../../../common/ajax-functions.js")
+  script(type="text/javascript" src="../../../common/cookies.js")    
+  script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+  script(type="text/javascript") var data = !{JSON.stringify(data)};
+  script(type="text/javascript") var user = !{JSON.stringify(user)};
+  script(type="text/javascript" src="../controllers/getPoll.js")

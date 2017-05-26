@@ -1,0 +1,473 @@
+/* line 9, ../../styles/sass/main.scss */
+html {
+  background: #7edbd3;
+  font-size: 20px;
+}
+@media (max-width: 600px) {
+  /* line 9, ../../styles/sass/main.scss */
+  html {
+    font-size: 16px;
+  }
+}
+
+/* line 17, ../../styles/sass/main.scss */
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+/* General Rules */
+/* line 22, ../../styles/sass/main.scss */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 27, ../../styles/sass/main.scss */
+h1 {
+  font-family: "Roboto Slab", serif;
+  color: #002e37;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* line 34, ../../styles/sass/main.scss */
+h2 {
+  font-family: "Roboto Slab", serif;
+  color: #002e37;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* line 41, ../../styles/sass/main.scss */
+h3 {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5rem;
+  color: #002e37;
+  border-bottom: solid 3px #002e37;
+}
+
+/* line 48, ../../styles/sass/main.scss */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Nav Bar */
+/* line 54, ../../styles/sass/main.scss */
+nav {
+  width: 100%;
+  height: 60px;
+  background: #002e37;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+@media (max-width: 550px) {
+  /* line 54, ../../styles/sass/main.scss */
+  nav {
+    font-size: 1.3rem;
+  }
+}
+
+/* line 69, ../../styles/sass/main.scss */
+.logo {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+/* line 74, ../../styles/sass/main.scss */
+.logo p {
+  padding-left: 20px;
+}
+@media (max-width: 550px) {
+  /* line 74, ../../styles/sass/main.scss */
+  .logo p {
+    padding-left: 5px;
+  }
+}
+@media (max-width: 550px) {
+  /* line 81, ../../styles/sass/main.scss */
+  .logo img {
+    width: 40px;
+    height: 34px;
+  }
+}
+@media (max-width: 370px) {
+  /* line 81, ../../styles/sass/main.scss */
+  .logo img {
+    display: none;
+  }
+}
+
+/* line 92, ../../styles/sass/main.scss */
+.menu > a {
+  padding: 5px;
+  margin: 0 20px;
+  font-size: 0.9em;
+}
+@media (max-width: 550px) {
+  /* line 92, ../../styles/sass/main.scss */
+  .menu > a {
+    margin: 0 5px;
+  }
+}
+/* line 100, ../../styles/sass/main.scss */
+.menu > a:hover {
+  color: #00839d;
+}
+
+/*Buttons*/
+/* line 105, ../../styles/sass/main.scss */
+.btn {
+  color: white;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 10px;
+  border: none;
+  margin-top: 10px;
+  font-weight: 700;
+}
+/* line 114, ../../styles/sass/main.scss */
+.btn:hover {
+  cursor: pointer;
+  background: #00839d;
+}
+
+/* line 120, ../../styles/sass/main.scss */
+.btn-action-red {
+  background: #f53638;
+  display: inline-block;
+}
+/* line 124, ../../styles/sass/main.scss */
+.btn-action-red:hover {
+  background: #f76768;
+}
+
+/* line 129, ../../styles/sass/main.scss */
+.btn-action-black {
+  background: #2b2b2b;
+}
+/* line 132, ../../styles/sass/main.scss */
+.btn-action-black:hover {
+  background: #454545;
+}
+
+/* line 137, ../../styles/sass/main.scss */
+.gh-btn {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+/* line 142, ../../styles/sass/main.scss */
+.gh-btn p {
+  margin: 0 0 0 10px;
+}
+@media (max-width: 500px) {
+  /* line 137, ../../styles/sass/main.scss */
+  .gh-btn {
+    width: 230px;
+  }
+}
+
+/* line 150, ../../styles/sass/main.scss */
+.latest {
+  font-weight: 400;
+}
+
+/* line 154, ../../styles/sass/main.scss */
+.del-btn {
+  margin: 0 0 0 10px;
+}
+
+/* line 158, ../../styles/sass/main.scss */
+.send-btn {
+  width: 40%;
+}
+
+/* line 162, ../../styles/sass/main.scss */
+.add-option {
+  background: #002e37;
+  width: 60%;
+}
+
+/* line 167, ../../styles/sass/main.scss */
+.logout {
+  margin-left: 15px;
+}
+
+/*Container*/
+/* line 171, ../../styles/sass/main.scss */
+.container {
+  width: 75%;
+  margin: 50px auto;
+}
+@media (max-width: 870px) {
+  /* line 171, ../../styles/sass/main.scss */
+  .container {
+    width: 90%;
+  }
+}
+
+/*Index Page*/
+/* line 179, ../../styles/sass/main.scss */
+.index-container {
+  display: flex;
+  width: 65%;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+@media (max-width: 850px) {
+  /* line 179, ../../styles/sass/main.scss */
+  .index-container {
+    width: 90%;
+  }
+}
+
+/* line 190, ../../styles/sass/main.scss */
+.home-container {
+  width: 50%;
+  font-size: 1.5rem;
+  color: #002e37;
+}
+@media (max-width: 500px) {
+  /* line 190, ../../styles/sass/main.scss */
+  .home-container {
+    width: 90%;
+  }
+}
+/* line 198, ../../styles/sass/main.scss */
+.home-container h4 {
+  margin-top: -20px;
+}
+@media (max-width: 500px) {
+  /* line 198, ../../styles/sass/main.scss */
+  .home-container h4 {
+    margin-top: 0;
+  }
+}
+
+/* line 206, ../../styles/sass/main.scss */
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 211, ../../styles/sass/main.scss */
+.image-container {
+  margin-top: 80px;
+  width: 50%;
+}
+@media (max-width: 850px) {
+  /* line 215, ../../styles/sass/main.scss */
+  .image-container img {
+    width: 250px;
+    height: 190px;
+  }
+}
+@media (max-width: 500px) {
+  /* line 215, ../../styles/sass/main.scss */
+  .image-container img {
+    display: none;
+  }
+}
+
+/*Newpoll Page*/
+/* line 226, ../../styles/sass/main.scss */
+.newpoll-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+/* line 231, ../../styles/sass/main.scss */
+.newpoll-form label {
+  color: #002e37;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 10px 0;
+}
+/* line 238, ../../styles/sass/main.scss */
+.newpoll-form input {
+  border-radius: 5px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+/*Polls Page*/
+/* line 245, ../../styles/sass/main.scss */
+.list > a > li {
+  background: #002e37;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 10px;
+  margin: 10px 0;
+}
+/* line 253, ../../styles/sass/main.scss */
+.list > a > li:hover {
+  background: #00839d;
+}
+
+/*Poll Result Page*/
+/* line 258, ../../styles/sass/main.scss */
+.chart-container {
+  width: 100%;
+}
+/* line 261, ../../styles/sass/main.scss */
+.chart-container h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+/* line 266, ../../styles/sass/main.scss */
+.chart-container > div {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  /* line 266, ../../styles/sass/main.scss */
+  .chart-container > div {
+    flex-direction: column;
+  }
+}
+
+/* line 277, ../../styles/sass/main.scss */
+.poll-container {
+  width: 40%;
+}
+@media (max-width: 500px) {
+  /* line 277, ../../styles/sass/main.scss */
+  .poll-container {
+    width: 100%;
+    order: 2;
+  }
+}
+
+/* line 285, ../../styles/sass/main.scss */
+.answer > li {
+  cursor: pointer;
+}
+
+/* line 289, ../../styles/sass/main.scss */
+.add-option {
+  width: 220px;
+  background: #2b2b2b;
+  margin: 5px 0;
+}
+
+/* line 295, ../../styles/sass/main.scss */
+.add-option-form {
+  margin: 10px 0;
+}
+/* line 298, ../../styles/sass/main.scss */
+.add-option-form input {
+  font-size: 1.2rem;
+}
+
+/* line 303, ../../styles/sass/main.scss */
+.message {
+  background: #f53638;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+/* line 309, ../../styles/sass/main.scss */
+.chart {
+  height: 400px;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  /* line 309, ../../styles/sass/main.scss */
+  .chart {
+    width: 100%;
+    order: 1;
+  }
+}
+
+/*Profile Page*/
+/* line 319, ../../styles/sass/main.scss */
+.profile-container h2 {
+  font-size: 1.5rem;
+}
+/* line 323, ../../styles/sass/main.scss */
+.profile-container p.username {
+  color: #002e37;
+  font-size: 36px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-bottom: solid 3px #002e37;
+}
+
+/* line 332, ../../styles/sass/main.scss */
+.poll-li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 338, ../../styles/sass/main.scss */
+.profile-list > li > a > p {
+  background: #002e37;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 10px;
+  margin: 10px 0;
+  display: inline-block;
+}
+/* line 348, ../../styles/sass/main.scss */
+.profile-list > li > a > p:hover {
+  background: #00839d;
+}
+
+/*Login Page*/
+/* line 353, ../../styles/sass/main.scss */
+.login-container {
+  display: flex;
+  justify-content: space-around;
+}
+/* line 357, ../../styles/sass/main.scss */
+.login-container h2 {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 750px) {
+  /* line 362, ../../styles/sass/main.scss */
+  .ballot-img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 450px) {
+  /* line 362, ../../styles/sass/main.scss */
+  .ballot-img {
+    display: none;
+  }
+}
+
+/*About Page*/
+/* line 373, ../../styles/sass/main.scss */
+.about-container h2 {
+  margin-bottom: 50px;
+}
+/* line 377, ../../styles/sass/main.scss */
+.about-container p {
+  color: #002e37;
+}
+/* line 381, ../../styles/sass/main.scss */
+.about-container span {
+  margin-top: 30px;
+}
+/* line 385, ../../styles/sass/main.scss */
+.about-container img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}

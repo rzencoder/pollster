@@ -1,0 +1,18 @@
+extends partials/layout.pug
+
+block content
+  div
+  .container
+    h3 New Poll
+    form(class="newpoll-form" action="/newpoll" method="post")
+      label(for="question") Poll Question
+      input(type="text" name="question")
+      div.option-inputs
+        label(for="option") Poll Options
+        input(type="text" name="option")
+        input(type="text" name="option")
+      button(type="button" name="add-option" class="btn add-option new-poll-btn") Add Option
+      button(type="submit" class="btn send-btn btn-action-black") Submit
+
+  script(type="text/javascript" src="common/ajax-functions.js")
+  script(type="text/javascript" src="controllers/createPoll.js")

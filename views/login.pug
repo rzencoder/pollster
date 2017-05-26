@@ -1,0 +1,11 @@
+extends partials/layout.pug
+
+block content
+  .login-container.container
+    div
+      h1 Sign In
+      a(href="/auth/github")
+        button.btn.gh-btn.btn-action-black
+          img(src="/public/img/github_32px.png") 
+          p Sign in with Github
+    img(src="public/img/ballot.png" class="ballot-img")

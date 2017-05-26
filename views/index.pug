@@ -1,0 +1,17 @@
+extends partials/layout.pug
+
+block content
+  .index-container
+    .home-container
+      h1 Poll Anything
+      h4 Create, save and share your own custom polls
+      .button-container
+        a(href="/polls")
+          button(class="btn btn-action-red latest") See Latest Polls
+        a(href="/auth/github")
+          button.btn.gh-btn.btn-action-black
+            img(src="/public/img/github_32px.png") 
+            p Sign in with Github
+    
+    .image-container
+      img(src="/public/img/home-large.png" alt="icon of a bar chart")
