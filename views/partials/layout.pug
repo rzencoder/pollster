@@ -5,15 +5,20 @@ html
     link(href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:400,700" rel="stylesheet")
     link(href="/public/css/normalize.css" rel="stylesheet" type="text/css")
     link(href="/public/css/main.css" rel="stylesheet" type="text/css")
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+    script(type="text/javascript" src="../../../common/ajax-functions.js")
   body
-    nav
-      a(href="/")
-        .logo
-          img(src="/public/img/logo.png" alt="icon of a bar chart")
-          p Pollster
-      .menu
-        a(href="/polls") Polls
-        a(href="/profile") Profile
-        a(href="/about") About
+    .header
+      .header-container
+        ul.nav#nav
+          a(href="/")
+            .logo
+              img(src="/public/img/logo.png" alt="icon of a bar chart")
+              p Pollster    
+          a(href="/about") About
+          a(href="/profile") Profile          
+          a(href="/polls") Polls
+          a(href="javascript:void(0);" class="icon" onclick="navController()") &#9776;
+          script function navController() {var x = document.getElementById("nav"); if (x.className === "nav") {  x.className += " header-mobile"; } else {  x.className = "nav";  }}
     block content
     

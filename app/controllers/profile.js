@@ -1,12 +1,11 @@
 'use strict';
 
-(function() {
   var displayName = document.querySelector('#display-name');
   var pollList = document.querySelector('#user-polls');
   var apiUrl = appUrl + '/api/:id';
 
   function displayPolls(data) {
-    data.forEach(item => {
+    data.forEach(function(item) {
       var li = document.createElement('li');
       li.classList.add('poll-li');
       var anchor = document.createElement('a');
@@ -49,5 +48,3 @@
   }
 
   loadPolls();
-
-})();

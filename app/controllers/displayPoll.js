@@ -2,17 +2,22 @@
 
 (function() {
   var apiUrl = appUrl + '/getpolls';
-  var list = document.querySelector('.list')
+  var list = $('.list')
 
   function updateData(data) {
     var polls = JSON.parse(data).data;
-    polls.reverse().forEach(poll => {
-      var anchor = document.createElement('a');
-      var li = document.createElement('li');
-      li.innerHTML = poll.question;
-      anchor.href = appUrl + '/poll/' + poll.question;
-      anchor.appendChild(li);
-      list.appendChild(anchor);
+    polls.reverse().forEach(function(poll, i) {
+      var anchor = $('<a></a>');
+      var li = $('<li></li>');
+      li.text(poll.question);
+      anchor.attr('href', appUrl + '/poll/' + poll.question)
+      anchor.append(li);
+      anchor.css('position', 'relative');
+    anchor.css('opacity', 0);
+    anchor.css('top', '100px')
+
+    anchor.animate({opacity: 1, top: 0}, i * 150)
+      list.append(anchor);
     })
   }
 
